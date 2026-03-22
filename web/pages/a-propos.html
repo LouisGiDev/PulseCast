@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos — PulseCast</title>
+    <meta name="description" content="Une page, tes chaînes Twitch, zéro backend — la vitrine qui suit ta commu.">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Twitch_logo_%28wordmark_only%29.svg/1920px-Twitch_logo_%28wordmark_only%29.svg.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="../js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="min-h-screen flex flex-col bg-surface text-surface-text font-sans antialiased selection:bg-brand/30 selection:text-white">
+    <header class="sticky top-0 z-50 border-b border-surface-border/80 bg-surface-raised/90 backdrop-blur-xl">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="flex h-16 items-center justify-between gap-4">
+                <a href="../index.html" class="group flex min-w-0 items-center gap-3">
+                    <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-brand to-brand-dim shadow-glow ring-1 ring-white/10 transition group-hover:ring-brand-soft/40">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Twitch_logo_%28wordmark_only%29.svg/1920px-Twitch_logo_%28wordmark_only%29.svg.png" alt="" width="120" height="32" class="h-6 w-auto brightness-0 invert">
+                    </div>
+                    <div class="min-w-0">
+                        <span class="font-display text-lg font-bold tracking-tight text-white">PulseCast</span>
+                        <p class="truncate text-xs text-surface-muted">Ta vitrine live</p>
+                    </div>
+                </a>
+                <nav class="hidden items-center gap-1 md:flex" aria-label="Navigation principale">
+                    <a href="../index.html" class="rounded-full px-4 py-2 text-sm font-medium text-surface-muted transition hover:bg-white/5 hover:text-white">Accueil</a>
+                    <a href="a-propos.html" class="rounded-full bg-white/10 px-4 py-2 text-sm font-semibold text-white">À propos</a>
+                    <a href="reseaux.html" class="rounded-full px-4 py-2 text-sm font-medium text-surface-muted transition hover:bg-white/5 hover:text-white">Réseaux</a>
+                </nav>
+                <div class="flex shrink-0 items-center gap-2">
+                    <a data-social="discord" href="reseaux.html" class="hidden h-10 w-10 items-center justify-center rounded-xl bg-[#5865F2] text-white transition hover:bg-[#4752C4] sm:inline-flex" title="Discord"><i class="fa-brands fa-discord text-lg"></i></a>
+                    <button type="button" data-mobile-menu-btn class="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-surface-border text-white md:hidden" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <div data-mobile-menu class="hidden border-t border-surface-border/80 pb-4 pt-2 md:hidden">
+                <div class="flex flex-col gap-1">
+                    <a href="../index.html" class="rounded-lg px-3 py-2.5 text-sm text-surface-muted hover:bg-white/5 hover:text-white">Accueil</a>
+                    <a href="a-propos.html" class="rounded-lg bg-white/5 px-3 py-2.5 text-sm font-semibold text-white">À propos</a>
+                    <a href="reseaux.html" class="rounded-lg px-3 py-2.5 text-sm text-surface-muted hover:bg-white/5 hover:text-white">Réseaux</a>
+                    <a href="conditions.html" class="rounded-lg px-3 py-2.5 text-xs text-surface-muted/80 hover:text-white">CGU</a>
+                    <a href="confidentialite.html" class="rounded-lg px-3 py-2.5 text-xs text-surface-muted/80 hover:text-white">Confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative overflow-hidden border-b border-surface-border/60">
+        <div class="pointer-events-none absolute inset-0 bg-hero-mesh"></div>
+        <div class="relative container mx-auto max-w-3xl px-4 py-12 text-center sm:px-6 md:py-16">
+            <p class="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-soft/25 bg-brand/10 px-4 py-1.5 font-display text-xs font-bold uppercase tracking-[0.2em] text-brand-soft">Vitrine · Statique</p>
+            <h1 class="font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl md:text-5xl">Conçu pour être partagé</h1>
+            <p class="mx-auto mt-4 max-w-xl text-lg text-surface-muted">Pas de compte, pas de base de données — juste une page qui met tes streamers sous les projecteurs.</p>
+        </div>
+    </section>
+
+    <main class="flex-grow pb-20 pt-10 md:pt-14">
+        <div class="container mx-auto max-w-3xl px-4 sm:px-6">
+            <div class="legal-page space-y-5">
+                <p class="text-lg leading-relaxed text-surface-muted">
+                    <strong class="font-display font-semibold text-white">PulseCast</strong> regroupe les chaînes Twitch de ta communauté sur <strong class="text-surface-text">une seule URL</strong> — plus besoin d’éparpiller les liens sur Discord.
+                </p>
+                <p>
+                    Tu choisis les chaînes dans <code class="rounded-md bg-black/40 px-2 py-0.5 font-mono text-sm text-brand-soft">frontend/js/config.js</code> (tableau <code class="rounded-md bg-black/40 px-1.5 py-0.5 font-mono text-xs text-brand-soft">streamers</code>) : titre affiché + pseudo Twitch. <strong class="text-surface-text">Aucun serveur PulseCast</strong> — le lecteur officiel Twitch charge le flux comme sur twitch.tv.
+                </p>
+                <div class="my-8 rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-6">
+                    <p class="font-display text-sm font-bold uppercase tracking-wide text-emerald-400/90">En bref</p>
+                    <p class="mt-2 text-surface-muted">Partage le lien de ton site : tes membres voient qui est en live, en un coup d’œil. Le bouton « Voir sur Twitch » ouvre la chaîne sur twitch.tv.</p>
+                </div>
+                <h2 id="reseaux">Réseaux sociaux</h2>
+                <p>
+                    Les icônes en bas de page lisent aussi <code class="rounded-md bg-black/40 px-2 py-0.5 font-mono text-sm text-brand-soft">config.js</code> (section <code class="rounded-md bg-black/40 px-1.5 py-0.5 font-mono text-xs text-brand-soft">social</code>). Tant qu’une URL est vide, le clic mène vers la page <a href="reseaux.html">Réseaux</a> pour la configurer.
+                </p>
+                <p>
+                    <a href="reseaux.html" class="inline-flex items-center gap-2 rounded-xl bg-brand px-5 py-3 font-display font-semibold text-white shadow-glow transition hover:bg-brand-dim">Configurer mes liens <i class="fa-solid fa-arrow-right text-sm"></i></a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-auto border-t border-surface-border bg-surface-raised/80">
+        <div class="container mx-auto px-4 py-12 sm:px-6">
+            <div class="flex flex-col items-center justify-between gap-8 md:flex-row md:items-start">
+                <div class="text-center md:text-left">
+                    <p class="font-display text-xl font-bold text-white">PulseCast</p>
+                    <p class="mt-1 max-w-xs text-sm text-surface-muted">La vitrine live pensée pour les communautés qui jouent et streament ensemble.</p>
+                    <p class="mt-4 text-xs text-surface-muted/70">© <span id="footer-year">2025</span></p>
+                </div>
+                <div class="flex gap-3 text-xl text-surface-muted" aria-label="Réseaux sociaux">
+                    <a data-social="twitter" href="reseaux.html" class="flex h-11 w-11 items-center justify-center rounded-xl border border-surface-border bg-surface/50 transition hover:border-brand-soft/50 hover:text-brand-soft" title="X"><i class="fab fa-twitter"></i></a>
+                    <a data-social="instagram" href="reseaux.html" class="flex h-11 w-11 items-center justify-center rounded-xl border border-surface-border bg-surface/50 transition hover:border-brand-soft/50 hover:text-brand-soft" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a data-social="youtube" href="reseaux.html" class="flex h-11 w-11 items-center justify-center rounded-xl border border-surface-border bg-surface/50 transition hover:border-brand-soft/50 hover:text-brand-soft" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a data-social="discord" href="reseaux.html" class="flex h-11 w-11 items-center justify-center rounded-xl border border-surface-border bg-surface/50 transition hover:border-brand-soft/50 hover:text-brand-soft" title="Discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <nav class="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-2 border-t border-surface-border/60 pt-8 text-center text-sm text-surface-muted" aria-label="Pied de page">
+                <a href="conditions.html" class="transition hover:text-white">Conditions d'utilisation</a>
+                <a href="confidentialite.html" class="transition hover:text-white">Confidentialité</a>
+                <a href="dmca.html" class="transition hover:text-white">DMCA</a>
+                <a href="a-propos.html" class="transition hover:text-white">À propos</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../js/config.js"></script>
+    <script src="../js/site-common.js"></script>
+</body>
+</html>
